@@ -17,6 +17,13 @@ else{
     console.log("blue");
 
 }
+sum=0
+for(let i = 0; i < b; i++){
+    sum=sum+i;
+    console.log(sum);
+}
+
+
 
 
 
