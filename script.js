@@ -36,6 +36,7 @@ for (let key in student){
     console.log(key, student[key]);
 }
 
+console.log(`the roll number of ${student.name} is ${student.roll}`)
 
 
 
