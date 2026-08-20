@@ -24,6 +24,20 @@ for(let i = 0; i < b; i++){
 }
 
 
+let student={
+    name : "Ram",
+    roll : 15,
+    address : "Kathmandu"
+
+
+
+}
+for (let key in student){
+    console.log(key, student[key]);
+}
+
+
+
 
 
 
