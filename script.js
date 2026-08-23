@@ -17,10 +17,10 @@ else{
     console.log("blue");
 
 }
-sum=0
+ summ=0;
 for(let i = 0; i < b; i++){
-    sum=sum+i;
-    console.log(sum);
+    summ=summ+i;
+    console.log(summ);
 }
 
 
@@ -58,6 +58,55 @@ console.log(num.slice(2,4));
 let num2=[8,9,10];
 console.log(num.concat(num2));
 num.splice(2,1,100);
+
+
+function ohyeah(){
+    console.log("hey this is a function");
+};
+ohyeah();
+
+function add(x,y){
+    console.log(x+y);
+
+}
+add(5,6);
+
+
+const sum=(p,q)=>{
+   console.log( p+q);
+} 
+sum(5,6);
+
+//callback function
+arr=[1,2,3,4,5];
+// arr.foreach((i)=>{
+//  console.log(i);   
+// }
+// )
+
+
+
+let nums=[6,7,8,9,10];
+let newarr = nums.map((i)=>{
+    console.log( i);
+});
+console.log(newarr);
+
+let evenarr= nums.filter((i)=>{
+    return i%2==0;
+})
+console.log(evenarr);
+
+const output= arr.reduce((prev,cur)=>{
+    return prev+cur;
+})
+console.log(output);
+
+
+
+
+
+
 
 
 
