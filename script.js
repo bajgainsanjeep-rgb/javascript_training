@@ -40,6 +40,27 @@ console.log(`the roll number of ${student.name} is ${student.roll}`)
 
 
 
+let num =[1,2,3,4,5 ];
+console.log(num[0]);
+console.log(num[1]);
+
+for(let i = 0; i < num.length; i++){
+    console.log(num[i]);
+};
+
+num.push(6);
+num.push(7);
+console.log(num);
+let deleted = num.pop();
+console.log("deleteed",deleted);
+console.log(num.slice(2,4));
+
+let num2=[8,9,10];
+console.log(num.concat(num2));
+num.splice(2,1,100);
+
+
+
 
 
 
