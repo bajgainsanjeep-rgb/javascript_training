@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: rgb(69, 38, 179);
+}
+body{
+    background-color: #d6bc29;
+
+}
+button{
+    color: rgb(25, 22, 172);
+    
+}

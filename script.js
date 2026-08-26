@@ -102,6 +102,24 @@ const output= arr.reduce((prev,cur)=>{
 })
 console.log(output);
 
+window.console.log("hello");
+
+
+console.dir(document.body);
+
+let heading = document.getElementById("heading");
+console.dir(heading);
+
+
+let headings= document.getElementsByClassName("head1class");
+console.dir(headings);
+console.log(headings);
+
+let buttons= document.getElementsByTagName("button");
+console.dir(buttons);
+
+let elements= document.querySelector("p");
+console.dir(elements);
 
 
 
