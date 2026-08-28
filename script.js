@@ -121,8 +121,21 @@ console.dir(buttons);
 let elements= document.querySelector("p");
 console.dir(elements);
 
+let div=document.querySelector("div");
+console.log(div.getAttribute("id"));
+let box= document.getElementById("box")
+console.dir(box);
+
+let name= div.getAttribute("name");
+console.log(name);
 
 
+div.style.backgroundColor="red";
+
+
+let newbtn= document.createElement("button");
+newbtn.innerText="new button";
+box.after(newbtn);
 
 
 
