@@ -17,3 +17,16 @@ button{
 div{
     background-color: aquamarine;
 }
+#box{
+    height: 20px;
+    width: 40px;
+    background-color: rgb(69, 38, 179);
+    border: 2px solid black;
+}
+
+.test{
+     height: 40px;
+    width: 80px;
+    background-color: rgb(69, 38, 179);
+    border: 2px solid black;
+}

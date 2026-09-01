@@ -138,6 +138,44 @@ newbtn.innerText="new button";
 box.after(newbtn);
 
 
+let btn1=document.querySelector("#btn1");
+
+btn1.onclick=(evt)=>{
+    console.log("button clicked");
+    console.log(evt);
+    console.log(evt.target);
+    console.log(evt.type);
+    console.log(evt.clientX, evt.clientY);
+}
+
+btn1.addEventListener("click",()=>{
+    console.log("button clicked-event handler");
+})
+const handler2= btn1.addEventListener("click",()=>{
+    console.log("button clicked-event handler2");
+})
+btn1.removeEventListener("click",handler2);
+
+
+
+let test=document.querySelector(".test");
+test.onmouseover=()=>{
+    console.log("mouse over");
+}
+
+
+let modebtn= document.querySelector("#mode");
+let currmode="light";
+modebtn.onclick=()=>{
+    if(currmode=="light"){
+        currmode="dark";
+        document.querySelector("body").style.backgroundColor="black";
+    }else{
+        currmode="light";
+        document.querySelector("body").style.backgroundColor="white";
+    }
+   console.log(currmode); 
+};
 
 
 
