@@ -43,10 +43,10 @@ if (age >= 18) {
 //promise
 
 function getdata(dataid, getnewdata) {
-    
-    return new Promise((resolve,reject)=>{
+
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
-            
+
             console.log("data", dataid);
             resolve("success");
             if (getnewdata) {
@@ -55,3 +55,59 @@ function getdata(dataid, getnewdata) {
         }, 3000)
     });
 };
+
+const getpromise = () => {
+    return new Promise((resolve, reject) => {
+        console.log("this is a promise");
+        resolve("success");
+        // reject("error");
+    })
+
+}
+let promise = getpromise();
+promise.then((res) => {
+    console.log("promise resolved", res);
+})
+promise.catch((err) => {
+    console.log("promise rejected", err);
+})
+
+
+
+
+
+const asyncfunction = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("data1");
+            resolve("success");
+        }, 4000)
+    })
+}
+
+console.log("fetching data1");
+let p1 = asyncfunction();
+p1.then((res) => {
+    console.log(res);
+})
+
+
+
+//promise chain
+function getdata(dataid) {
+    return new Promise((resolve, reject) => {
+        
+    
+    setTimeout(() => {
+        console.log("wow", dataid);
+        resolve("success")
+      
+    }, 2000)
+})
+}
+
+getdata(1).then((res) => {
+    return getdata(2);
+}).then((res) => {
+    console.log(res);
+})
