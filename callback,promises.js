@@ -135,3 +135,18 @@ async function getdataasync() {
     await getdata(1);
     await getdata(2);
 })();
+
+//catfacts api
+const URL = "https://catfact.ninja/fact"
+const factspara= document.querySelector("#facts");
+const getfactsbtn= document.querySelector("#getfactsbtn");
+const getfacts= async()=>{
+    console.log("getting data ...")
+    let response =await fetch(URL);
+    console.log(response);
+    let data= await response.json();
+    console.log(data);
+    factspara.innerText= data.fact ;
+}
+
+getfactsbtn.addEventListener("click",getfacts);
