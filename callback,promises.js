@@ -111,3 +111,27 @@ getdata(1).then((res) => {
 }).then((res) => {
     console.log(res);
 })
+
+
+//async await
+function getdata(dataid) {
+    return new Promise((resolve, reject) => {
+        
+    
+    setTimeout(() => {
+        console.log("wow", dataid);
+        resolve("success")
+      
+    }, 2000)
+})
+}
+async function getdataasync() {
+    await getdata(1);
+    await getdata(2);
+}
+
+//IIFE   automatically call the function
+(async function getdataasync() {
+    await getdata(1);
+    await getdata(2);
+})();
